@@ -25,9 +25,9 @@ dependencies: [
 ### Example - 範例
 ```swift
 import UIKit
-import WWPrint
 import WWHUD
-import WWSimpleGeminiAI
+import WWSimpleAI_Ollama
+import WWSimpleAI_Gemini
 
 final class ViewController: UIViewController {
 
@@ -64,7 +64,7 @@ final class ViewController: UIViewController {
 private extension ViewController {
     
     func initSetting() {
-        WWSimpleGeminiAI.configure(apiKey: apiKey)
+        WWSimpleAI.Gemini.configure(apiKey: apiKey)
     }
     
     func chat(text: String) {
@@ -73,7 +73,7 @@ private extension ViewController {
         
         Task {
             
-            let result = await WWSimpleGeminiAI.shared.chat(text: text)
+            let result = await WWSimpleAI.Gemini.shared.chat(text: text)
             
             switch result {
             case .failure(let error): myTextView.text = "\(error)"
@@ -90,7 +90,7 @@ private extension ViewController {
 
         Task {
             
-            let result = await WWSimpleGeminiAI.shared.vision(text: text, image: image)
+            let result = await WWSimpleAI.Gemini.shared.vision(text: text, image: image)
             
             switch result {
             case .failure(let error): myTextView.text = "\(error)"
@@ -107,7 +107,7 @@ private extension ViewController {
 
         Task {
             
-            let result = await WWSimpleGeminiAI.shared.stream(text: text)
+            let result = await WWSimpleAI.Gemini.shared.stream(text: text)
             
             switch result {
             case .failure(let error): myTextView.text = "\(error)"
