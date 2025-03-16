@@ -1,5 +1,5 @@
 {
-  "originHash" : "750ac518febad17d2f2ae5333aac3e863ea7e2d05ab5b8a4a3a4787b493ebf94",
+  "originHash" : "fa1b1257be17e34f3339f6fb111b96a8da75b4da82f9d6c0e971ef64ab55aa95",
   "pins" : [
     {
       "identity" : "wwhud",
@@ -17,6 +17,15 @@
       "state" : {
         "revision" : "9e41bb9f5ed6b19030389b77c0a73520844a20f5",
         "version" : "1.7.5"
+      }
+    },
+    {
+      "identity" : "wwsimpleai_gemini",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWSimpleAI_Gemini",
+      "state" : {
+        "revision" : "5e03ce790940c4b29c2855df250e6fb98e3f6309",
+        "version" : "1.0.0"
       }
     },
     {

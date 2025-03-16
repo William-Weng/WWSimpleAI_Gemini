@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D2D4EE32D86B0FC00FDB2A8 /* WWSimpleAI_Gemini in Frameworks */ = {isa = PBXBuildFile; productRef = 3D2D4EE22D86B0FC00FDB2A8 /* WWSimpleAI_Gemini */; };
+		3D2D4EE62D86B2BE00FDB2A8 /* WWSimpleAI_Gemini in Frameworks */ = {isa = PBXBuildFile; productRef = 3D2D4EE52D86B2BE00FDB2A8 /* WWSimpleAI_Gemini */; };
 		3DBCD87426F198EF00522E3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCD87326F198EF00522E3B /* AppDelegate.swift */; };
 		3DBCD87826F198EF00522E3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCD87726F198EF00522E3B /* ViewController.swift */; };
 		3DBCD87B26F198EF00522E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87926F198EF00522E3B /* Main.storyboard */; };
@@ -32,7 +32,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DBCEFE72D86AF9900727724 /* WWHUD in Frameworks */,
-				3D2D4EE32D86B0FC00FDB2A8 /* WWSimpleAI_Gemini in Frameworks */,
+				3D2D4EE62D86B2BE00FDB2A8 /* WWSimpleAI_Gemini in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +126,7 @@
 			name = Example;
 			packageProductDependencies = (
 				3DBCEFE62D86AF9900727724 /* WWHUD */,
-				3D2D4EE22D86B0FC00FDB2A8 /* WWSimpleAI_Gemini */,
+				3D2D4EE52D86B2BE00FDB2A8 /* WWSimpleAI_Gemini */,
 			);
 			productName = Example;
 			productReference = 3DBCD87026F198EF00522E3B /* Example.app */;
@@ -158,7 +158,7 @@
 			mainGroup = 3DBCD86726F198EF00522E3B;
 			packageReferences = (
 				3DBCEFE52D86AF9900727724 /* XCRemoteSwiftPackageReference "WWHUD" */,
-				3DBCEFE82D86AFAD00727724 /* XCLocalSwiftPackageReference "../../WWSimpleAI_Gemini" */,
+				3D2D4EE42D86B2BE00FDB2A8 /* XCRemoteSwiftPackageReference "WWSimpleAI_Gemini" */,
 			);
 			productRefGroup = 3DBCD87126F198EF00522E3B /* Products */;
 			projectDirPath = "";
@@ -401,14 +401,15 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		3DBCEFE82D86AFAD00727724 /* XCLocalSwiftPackageReference "../../WWSimpleAI_Gemini" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../WWSimpleAI_Gemini;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
+		3D2D4EE42D86B2BE00FDB2A8 /* XCRemoteSwiftPackageReference "WWSimpleAI_Gemini" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/William-Weng/WWSimpleAI_Gemini";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		3DBCEFE52D86AF9900727724 /* XCRemoteSwiftPackageReference "WWHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/William-Weng/WWHUD";
@@ -420,9 +421,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3D2D4EE22D86B0FC00FDB2A8 /* WWSimpleAI_Gemini */ = {
+		3D2D4EE52D86B2BE00FDB2A8 /* WWSimpleAI_Gemini */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3DBCEFE82D86AFAD00727724 /* XCLocalSwiftPackageReference "../../WWSimpleAI_Gemini" */;
+			package = 3D2D4EE42D86B2BE00FDB2A8 /* XCRemoteSwiftPackageReference "WWSimpleAI_Gemini" */;
 			productName = WWSimpleAI_Gemini;
 		};
 		3DBCEFE62D86AF9900727724 /* WWHUD */ = {
